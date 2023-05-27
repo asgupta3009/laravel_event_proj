@@ -33,7 +33,7 @@
                                     <tr>
                                         <td>{{++$i}}</td>
                                         <td>{{$item->name}}</td>
-                                        <td><a href="{{ route('editgenre', ['id'=>Crypt::encryptString($item->id)]) }}">Edit</a> | <a href="{{ route('deletegenre', ['id'=>Crypt::encryptString($item->id)]) }}">Delete</a></td>
+                                        <td><a href="{{ route('editgenre', ['id'=>Crypt::encryptString($item->id)]) }}">Edit</a> | <a href="{{ route('delgenre', ['id'=>Crypt::encryptString($item->id)]) }}">Delete</a></td>
                                     </tr>    
                                     @endforeach
                                 </table>

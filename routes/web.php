@@ -35,7 +35,7 @@ Route::get('/addgenre', [GenreController::class, 'addGenre'])->name('addgenre');
 Route::post('/insertgenre', [GenreController::class, 'genreinsert'])->name('insertgenre');
 Route::get('/editgenre/{id}', [GenreController::class, 'editgenre'])->name('editgenre');
 Route::put('/editgenre/{id}', [GenreController::class, 'genreupdate'])->name('genreupdate');
-Route::get('/delete/{id}', [GenreController::class, 'destroy'])->name('deletegenre');
+Route::get('/genredelete/{id}', [GenreController::class, 'delete'])->name('delgenre'); 
 
 //Artist Routes
 Route::get('/artist', [ArtistController::class, 'index'])->name('artist');
