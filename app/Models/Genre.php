@@ -10,4 +10,10 @@ class Genre extends Model
     use HasFactory;
 
     protected $table = 'genre';
+
+    public function eventRelation()
+    {
+
+        return $this->hasMany(Events::class, 'genre_id');
+    }
 }
