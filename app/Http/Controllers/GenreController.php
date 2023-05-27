@@ -70,7 +70,7 @@ class GenreController extends Controller
     }
 
 
-    public function destroy($id)
+    public function delete($id)
     {
         $id = Crypt::decryptString($id);
         Genre::destroy($id);
