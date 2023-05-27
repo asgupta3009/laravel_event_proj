@@ -60,3 +60,7 @@ Route::post('/insertevents', [EventsController::class, 'eventsinsert'])->name('i
 /* Route::get('/editvenue/{id}', [VenueController::class, 'editvenue'])->name('editvenue');
 Route::put('/editvenue/{id}', [VenueController::class, 'venueupdate'])->name('venueupdate');
 Route::get('/delete/{id}', [VenueController::class, 'destroy'])->name('deletevenue'); */
+
+
+//Search welcome page
+Route::post('/searchevents', [WelcomeController::class, 'searchevents'])->name('searchevents');
