@@ -28,7 +28,9 @@ class EventsController extends Controller
      */
     public function index()
     {
-        $data = Events::all();
+        $data = Events::join("genre","genre.id","=","events.genre_id") 
+                        ->join("venue","venue.id","=","events.venue_id") 
+                        ->get(["events.*","genre.name","venue.name as venue_name"]);
         // dd($genredata);
 
         $title="Events Master";
