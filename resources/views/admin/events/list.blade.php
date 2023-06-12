@@ -38,12 +38,12 @@
                                     <tr>
                                         <td>{{++$i}}</td>
                                         <td>{{$item->title}}</td>
-                                        <td>{{$item->genre_id}}</td>
+                                        <td>{{$item->name}}</td>
                                         <td><img src="{{ URL::to('/public/photo/'.$item->photo) }}" height="100" width="100"></td>
                                         <td>{{$item->desc}}</td>
                                         <td>{{$item->amount}}</td>
                                         <td>{{$item->event_date}}</td>
-                                        <td>{{$item->venue_id}}</td>
+                                        <td>{{$item->venue_name}}</td>
                                         <!--<td><a href="{{-- route('editartist', ['id'=>Crypt::encryptString($item->id)]) --}}">Edit</a> | <a href="{{-- route('deleteartist', ['id'=>Crypt::encryptString($item->id)]) --}}">Delete</a></td>-->
                                     </tr>    
                                     @endforeach
